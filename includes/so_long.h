@@ -6,7 +6,7 @@
 /*   By: jgueon <jgueon@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 14:07:31 by jgueon            #+#    #+#             */
-/*   Updated: 2025/07/24 18:25:33 by jgueon           ###   ########.fr       */
+/*   Updated: 2025/07/25 19:29:25 by jgueon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ typedef struct s_game
 
 /* ------------- parse ------------- */
 bool	read_map(const char	*file, t_map *map);
-bool	validate_map(t_map *map);
+bool	validate_map(t_game *g);
+bool	validate_path(t_game *g);
 
 /* ------------- game -------------- */
 bool	game_init(t_game *g);
