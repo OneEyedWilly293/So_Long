@@ -6,7 +6,7 @@
 /*   By: jgueon <jgueon@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:17:36 by jgueon            #+#    #+#             */
-/*   Updated: 2025/07/24 15:33:04 by jgueon           ###   ########.fr       */
+/*   Updated: 2025/07/25 19:29:48 by jgueon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main(int ac, char **av)
 		clean_exit(NULL, "Usage: ./so_long map.ber\n");
 	if (!read_map(av[1], &g.map))
 		clean_exit(NULL, "Error\nInvalid map.\n");
-	if (!validate_map(&g.map))
+	if (!validate_map(&g))
 		clean_exit(NULL, "Error\nMap validation failed.\n");
 	if (!game_init(&g))
 		clean_exit(&g, "MLX failed to init.\n");
